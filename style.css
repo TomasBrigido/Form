@@ -1,0 +1,90 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: darkcyan;
+}
+
+
+#container{
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#title{
+    padding-top: 10px;
+}
+#description{
+    padding-bottom: 20px;
+}
+
+form{
+    background-color: aliceblue;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 20px;
+
+}
+
+.formGrup{
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.format{
+    margin-top: 5px;
+    width: 90%;
+    background-color: white;
+    border: 1px solid #8f8f9d;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 10px;
+}
+.cb{
+    margin: 5px;
+}
+label{
+    display: flex;
+}
+.description{
+    margin-bottom: 10px;
+}
+
+.textArea{
+    min-height: 120px;
+    width: 90%;
+}
+button{
+    width: 100%;
+    min-height: 30px;
+    background-color: bisque;
+    border: 1px solid #8f8f9d;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgba(255, 228, 196, 0.377);
+}
+
+button:active{
+    background-color: bisque;
+}  
+
+@media (max-width: 570px){
+    body{
+       margin: 0px;
+    }
+
+    form{
+        padding-left: 20px;
+    }
+    #button{
+        padding-right: 20px;
+    }
+}

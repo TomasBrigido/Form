@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">A really important form</h1>
+            <p id="description">A really important description</p>    
+        </header>
+
+        <form id="survey-form">
+
+            <div class="formGrup">
+                <label id="name-label">
+                    Name
+                </label>
+                <input class="format" type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="formGrup">
+                <label id="email-label">
+                    Email
+                </label>
+                <input class="format" type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="formGrup">
+                <label id="number-label">
+                    Age (optional)
+                </label>
+                <input class="format" type="number" id="number" placeholder="Age" min="1" max="10">
+            </div>
+
+            <div class="formGrup">
+                <label>
+                    Which option best describes your current role?
+                </label>
+                <select class="format" type="dropdown" id="dropdown" placeholder="Select current role">
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                </div>
+
+            <div class="formGrup">
+                <label class="description">
+                    Would you recommend freeCodeCamp to a friend?
+                </label>
+                <label><input class="cb" type="radio" name="cboptions" value="1"> Maybe</label>
+                <label><input class="cb" type="radio" name="cboptions" value="2"> Not sure</label>
+                <label><input class="cb" type="radio" name="cboptions" value="3"> Definitely</label>
+            </div>
+
+            <div class="formGrup">
+                <label>
+                    What is your favorite feature of freeCodeCamp? 
+                </label>
+                <select class="format" type="dropdown" id="dropdown" placeholder="Select current role">
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+
+            <div class="formGrup">
+                <label class="description">
+                    Would you recommend freeCodeCamp to a friend?
+                </label>
+                <label><input class="cb" type="checkbox" name="cboptions" value="1"> Maybe</label>
+                <label><input class="cb" type="checkbox" name="cboptions" value="2"> Not sure</label>
+                <label><input class="cb" type="checkbox" name="cboptions" value="3"> Definitely</label>
+            </div>
+
+            <div class="formGrup">
+                <label>Rocomend somethig..</label>
+                <textarea class="textArea" placeholder="Recomend here.."></textarea>
+            </div>
+            
+            <div class="formGrup" id="button">
+            <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
